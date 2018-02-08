@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="hamburger sidebar-toggle hamburger--emphatic" id="hamburger">
+    <div class="hamburger-box"><div class="hamburger-inner"></div></div>
+</div>
+{% include 'skel/bread.twig' %}
+<div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav" style="margin-left: auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="javascript:void" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class='fa fa-user'></i>&nbsp;</a>
+            <div class="dropdown-menu dropdown-menu-right text-right" aria-labelledby="dropdown01" style="right: 0">
+              {% if auth %}
+              <a  class="dropdown-item" href="javascript:void(0)">{{twigUser}}</a>
+              <a class="dropdown-item"  href="/logout">Sign out</a>
+              {% else %}
+              <a class="dropdown-item" href="/login">Sign in</a>
+              {% endif %}
+            </div>
+          </li>
+    </ul>
+</div>
+</nav>
+
+

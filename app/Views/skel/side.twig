@@ -1,0 +1,19 @@
+<div id="sidebar-wrapper">
+<div class="d-flex">
+            <ul class="sidebar-nav subshy">
+        <div class="logo">
+            <img src="/mojo/img/marque-logo.png" alt="Marque" style='max-height: 2em'>
+        </div>
+        <div style="padding: 1em 0">
+            {{files}}
+        </div>
+              {% if auth %}
+              <div class="logout-row"><li><a id='old'  href="/logout">Sign out: {{twigUser}}</a></li></div>
+              {% else %}
+              <li class="logout-row"><a id='old'  href="/login">Sign in</a></li>
+              {% endif %}
+            </ul>
+</div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+

@@ -1,0 +1,11 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb unpad p-0 m-0">
+<li class="breadcrumb-item"><a href="/">Home</a></li>
+{% if breadcrumbs %}
+    {% for breadcrumb in breadcrumbs %}
+            <li class="breadcrumb-item"><a href="{{  breadcrumb['href'] }}">{{ breadcrumb['name'] }}</a></li>
+    {% endfor %}
+{% endif %}
+  </ol>
+</nav>
+

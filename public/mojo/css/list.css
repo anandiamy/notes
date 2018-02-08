@@ -1,0 +1,107 @@
+.bonsai,
+.bonsai > li {
+  margin: 0;
+  padding: 0.25em;
+  list-style: none;
+  overflow: hidden;
+line-height: 24px;
+  position: relative;
+}
+
+li .thumb {
+  margin: -1px 0 0 -1em; /* negative margin into the padding of the li */
+  position: absolute;
+  cursor: pointer;
+    font: normal normal normal 16px/1 FontAwesome;
+line-height: 24px;
+}
+
+li.has-children > .thumb:after {
+  content: "\f114";
+}
+
+li.has-children.expanded > .thumb:after {
+  content: "\f115";
+}
+
+li.collapsed > ol.bonsai {
+  height: 0;
+  overflow: hidden;
+}
+
+.bonsai .all,
+.bonsai .none {
+  cursor: pointer;
+}
+.has-children {
+color: #e83e8c;
+}
+.phile > a:hover, .pholder > a:hover {
+color: inherit;
+}
+.phile {
+font-style: italic;
+    text-transform: none;
+font-weight: 700;
+}
+.phile:before{
+}
+.pholder {
+font-weight: 200;
+    text-transform: uppercase;
+}
+#ugh{
+margin-left: 1rem;
+}
+
+.monsai,
+.monsai > li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+display: flex;
+    flex-direction: column;
+}
+
+.monsai > li {
+  position: relative;
+  padding-left: 1.3em; /* padding for the ikon */
+}
+
+li .ikon {
+  margin: 0 0 0 -1em; /* negative margin into the padding of the li */
+  position: absolute;
+  cursor: pointer;
+	line-height: 1.5;
+    font-weight: 900;
+    font: normal normal normal 16px/1 FontAwesome;
+}
+
+li.has-file > .ikon:after {
+  content: "\f07b";
+}
+
+li.has-file.expanded > .ikon:after {
+  content: "\f07c";
+}
+
+li.collapsed > ol.monsai {
+  height: 0;
+  overflow: hidden;
+}
+
+.monsai .all,
+.monsai .none {
+  cursor: pointer;
+}
+
+.has-file {
+}
+.linky {
+margin-left: 10px;
+}
+.thumb a {
+line-height: 24px;
+}
+

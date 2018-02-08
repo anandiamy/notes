@@ -1,0 +1,18 @@
+{% extends 'app.twig' %}
+      {% block content %}
+<div id="content" class="pangloss">
+<div class="card">
+<div class="row tightrow" id='cardnav'>
+<div class="col blanc">{{title|e}}</div>
+<div class="col blanc text-right">
+<a><i class='fa fa-pencil' id='click'></i></a>
+</div>
+</div>
+<div class="card-body">
+    <div id='parsed'>
+{{ marked }}
+    </div>
+    <div id="raw" class="nist"><form id="perform" method="post" name="edited"><textarea id="takethis" name="takethis"  class="autosave">{{ unmarked}}</textarea></form></div>
+</div>
+{% endblock %}
+

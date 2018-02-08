@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'skel/meta.twig' %}
+<body>
+    <div id="wrapper">
+{% include 'skel/nav.twig' %}
+{% include 'skel/side.twig' %}
+<div id="page-content-wrapper">
+<div class="container-fluid">
+<div class="col-md-12 col-lg-10 offset-lg-1" id='marque'>
+            {% block content %}{% endblock %}
+</div>
+</div>
+</div>
+{% include 'skel/rx.twig' %}
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,12 @@
+.tightrow {
+    margin: 0;
+}
+.nist{
+display: none;
+}
+.unpad{
+padding: 0 !important;
+}
+.bg-dark {
+    background-color: #000 !important;
+}
